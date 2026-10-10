@@ -1,7 +1,6 @@
-```yaml
 name: Deploy portfolio to GitHub Pages
 
-on:
+'on':
   push:
     branches:
       - main
@@ -54,4 +53,3 @@ jobs:
       - name: Deploy website
         id: deployment
         uses: actions/deploy-pages@v4
-```
