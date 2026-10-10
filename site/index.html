@@ -9,7 +9,42 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-<style>
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.form-note {
+  color: var(--muted);
+  font-size: 12px;
+  margin-top: 12px;
+}
+
+input,
+textarea {
+  width: 100%;
+  margin-top: 6px;
+  padding: 12px;
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  color: var(--text);
+  font: inherit;
+}
+
+textarea {
+  min-height: 120px;
+}
+
+@media (max-width: 650px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+  <style>
 :root{--bg:#080b12;--panel:#101725;--panel2:#121c2d;--text:#f4f7fb;--muted:#a6b1c2;--accent:#8b7cff;--accent2:#4bd6c8;--line:rgba(255,255,255,.11);--radius:22px}
 *{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth;scroll-padding-top:100px}
 body{font-family:"DM Sans",sans-serif;background:radial-gradient(circle at 8% 6%,rgba(139,124,255,.14),transparent 28%),radial-gradient(circle at 92% 30%,rgba(75,214,200,.08),transparent 26%),var(--bg);color:var(--text);line-height:1.65;overflow-x:hidden}
