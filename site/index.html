@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Portfolio of Sneha Basavaraj Goudar, final-year Computer Engineering student graduating in 2027, with Siemens internship experience and software projects.">
+<title>Sneha Basavaraj Goudar | Placement Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<style>
+:root{--bg:#080b12;--panel:#101725;--panel2:#121c2d;--text:#f4f7fb;--muted:#a6b1c2;--accent:#8b7cff;--accent2:#4bd6c8;--line:rgba(255,255,255,.11);--radius:22px}
+*{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth;scroll-padding-top:100px}
+body{font-family:"DM Sans",sans-serif;background:radial-gradient(circle at 8% 6%,rgba(139,124,255,.14),transparent 28%),radial-gradient(circle at 92% 30%,rgba(75,214,200,.08),transparent 26%),var(--bg);color:var(--text);line-height:1.65;overflow-x:hidden}
+a{color:inherit;text-decoration:none}.container{width:min(1120px,calc(100% - 38px));margin:auto}
+.nav{position:fixed;z-index:50;top:16px;left:50%;transform:translateX(-50%);width:min(1120px,calc(100% - 28px));display:flex;justify-content:space-between;align-items:center;padding:13px 20px;border:1px solid var(--line);border-radius:16px;background:rgba(9,14,24,.82);backdrop-filter:blur(18px)}
+.brand{font:700 21px "Space Grotesk";letter-spacing:-.6px}.brand span{color:var(--accent2)}.nav-links{display:flex;gap:25px;list-style:none}.nav-links a{font-size:13px;color:var(--muted);transition:.2s}.nav-links a:hover{color:var(--accent2)}
+.menu{display:none;background:none;color:var(--text);border:0;font-size:21px}
+.hero{min-height:100vh;display:flex;align-items:center;padding:140px 0 75px}.hero-grid{display:grid;grid-template-columns:1.2fr .8fr;align-items:center;gap:70px}
+.eyebrow{display:inline-flex;align-items:center;gap:9px;padding:8px 13px;border:1px solid rgba(75,214,200,.25);background:rgba(75,214,200,.06);border-radius:100px;color:var(--accent2);font-size:12px;font-weight:700;letter-spacing:.6px;margin-bottom:24px}
+.dot{width:7px;height:7px;background:#6be6a6;border-radius:50%;box-shadow:0 0 12px #6be6a6}
+h1,h2,h3{font-family:"Space Grotesk",sans-serif;line-height:1.12}h1{font-size:clamp(48px,7vw,82px);letter-spacing:-3.5px;margin-bottom:23px} .accent{background:linear-gradient(100deg,var(--accent),var(--accent2));-webkit-background-clip:text;background-clip:text;color:transparent}
+.lead{max-width:620px;color:var(--muted);font-size:16px;line-height:1.9;margin-bottom:30px}
+.buttons{display:flex;gap:12px;flex-wrap:wrap}.btn{display:inline-flex;align-items:center;gap:9px;padding:12px 17px;border-radius:12px;font-weight:700;font-size:13px;transition:.25s;border:1px solid var(--line)}.btn:hover{transform:translateY(-3px)}.primary{background:linear-gradient(100deg,var(--accent),#6f8cff);border-color:transparent;color:#fff}.secondary{background:rgba(255,255,255,.035)}
+.profile-card,.card{background:linear-gradient(145deg,rgba(255,255,255,.065),rgba(255,255,255,.025));border:1px solid var(--line);border-radius:var(--radius);box-shadow:0 25px 70px rgba(0,0,0,.22)}
+.profile-card{padding:30px;text-align:center;position:relative;overflow:hidden}.profile-card:before{content:"";position:absolute;inset:-90px -60px auto auto;width:190px;height:190px;background:var(--accent);filter:blur(80px);opacity:.2}
+.portrait{width:154px;height:154px;border-radius:50%;border:2px solid rgba(139,124,255,.75);padding:5px;object-fit:cover;background:#20263b;margin-bottom:19px;position:relative}
+.profile-card h3{font-size:25px;margin-bottom:7px;position:relative}.profile-card p{font-size:13px;color:var(--muted);margin-bottom:24px;position:relative}
+.mini-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:9px}.stat{padding:13px 5px;background:rgba(255,255,255,.035);border:1px solid rgba(255,255,255,.06);border-radius:13px}.stat strong{display:block;color:var(--accent2);font:700 17px "Space Grotesk"}.stat span{font-size:10px;color:var(--muted)}
+section{padding:92px 0}.section-head{margin-bottom:36px}.label{font-size:11px;letter-spacing:2px;text-transform:uppercase;color:var(--accent2);font-weight:700;display:block;margin-bottom:12px}.section-head h2{font-size:clamp(32px,4.5vw,48px);letter-spacing:-1.5px}.section-head p{color:var(--muted);max-width:660px;margin-top:14px}
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}.card{padding:27px}.card h3{font-size:21px;margin-bottom:13px}.card p{font-size:14px;color:var(--muted);line-height:1.85}
+.pills{display:flex;flex-wrap:wrap;gap:10px}.pill{padding:10px 14px;border:1px solid var(--line);background:rgba(255,255,255,.035);border-radius:10px;color:#d7deeb;font-size:12px;transition:.2s}.pill:hover{border-color:rgba(139,124,255,.6);transform:translateY(-2px)}
+.project-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}.project{min-height:275px;position:relative;display:flex;flex-direction:column}.project-icon{width:46px;height:46px;display:grid;place-items:center;border-radius:13px;color:var(--accent2);background:rgba(75,214,200,.08);border:1px solid rgba(75,214,200,.18);font-size:18px;margin-bottom:21px}.project h3{font-size:21px;margin-bottom:12px}.project p{color:var(--muted);font-size:13px;line-height:1.8;margin-bottom:18px}.tags{display:flex;flex-wrap:wrap;gap:7px;margin-top:auto}.tag{font-size:10px;color:#c8c5ff;background:rgba(139,124,255,.1);border:1px solid rgba(139,124,255,.18);border-radius:7px;padding:5px 8px}.project-link{position:absolute;right:22px;top:23px;color:var(--accent2)}
+.timeline{border-left:1px solid rgba(139,124,255,.4);margin-left:7px;padding-left:25px;display:grid;gap:18px}.timeline .card{position:relative}.timeline .card:before{content:"";position:absolute;width:9px;height:9px;border-radius:50%;background:var(--accent2);left:-31px;top:30px;box-shadow:0 0 14px rgba(75,214,200,.45)}.meta{color:var(--accent2);font-size:11px;font-weight:700;letter-spacing:.7px;margin-bottom:8px;text-transform:uppercase}
+.contact{padding:50px 25px;text-align:center}.contact h2{font-size:clamp(32px,5vw,52px);margin-bottom:14px}.contact p{color:var(--muted);margin:0 auto 25px;max-width:620px}.socials{display:flex;justify-content:center;gap:10px;flex-wrap:wrap;margin-top:20px}.social{width:43px;height:43px;border-radius:12px;border:1px solid var(--line);display:grid;place-items:center;color:var(--muted);transition:.2s}.social:hover{color:var(--accent2);border-color:var(--accent2);transform:translateY(-3px)}
+footer{text-align:center;color:#778399;font-size:11px;padding:30px 0 40px}footer span{color:var(--accent2)}
+.reveal{animation:rise .7s both}@keyframes rise{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:translateY(0)}}
+@media(max-width:850px){.hero-grid{grid-template-columns:1fr;gap:38px}.profile-card{max-width:480px;margin:auto}.project-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:650px){.nav-links{display:none;position:absolute;top:60px;left:0;right:0;padding:20px;background:#0c1320;border:1px solid var(--line);border-radius:14px;flex-direction:column;gap:15px}.nav-links.open{display:flex}.menu{display:block}.hero{padding-top:125px}.hero h1{letter-spacing:-2px}.about-grid,.project-grid{grid-template-columns:1fr}section{padding:70px 0}.container{width:calc(100% - 30px)}.profile-card{padding:24px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+<nav class="nav">
+  <a class="brand" href="#home">Sneha<span>.</span></a>
+  <button class="menu" id="menuBtn" aria-label="Open navigation"><i class="fa-solid fa-bars"></i></button>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="#home">Home</a></li><li><a href="#about">About</a></li><li><a href="#skills">Skills</a></li><li><a href="#projects">Projects</a></li><li><a href="#experience">Experience</a></li><li><a href="#education">Education</a></li><li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+<main>
+<section class="hero" id="home"><div class="container hero-grid">
+  <div class="reveal">
+    <div class="eyebrow"><span class="dot"></span> COMPUTER ENGINEERING STUDENT</div>
+    <h1>Hi, I'm<br><span class="accent">Sneha Basavaraj Goudar.</span><br>I build useful<br>digital solutions.</h1>
+    <p class="lead">I'm a Computer Engineering student who enjoys learning by building. I'm interested in software development, practical applications, and using technology to solve real-world problems.</p>
+    <div class="buttons"><a class="btn primary" href="#projects"><i class="fa-solid fa-code"></i> Explore My Projects</a><a class="btn secondary" href="#contact"><i class="fa-regular fa-paper-plane"></i> Connect With Me</a></div>
+  </div>
+  <aside class="profile-card reveal">
+    <!-- Replace assets/sneha-photo.jpg with your own photo, or change the src below. -->
+    <img class="portrait" src="assets/sneha-photo.jpeg" alt="Sneha Goudar portrait" onerror="this.style.display='none';document.getElementById('photoFallback').style.display='grid'">
+    <div id="photoFallback" style="display:none;width:154px;height:154px;border-radius:50%;margin:0 auto 19px;place-items:center;background:linear-gradient(135deg,#8b7cff,#4bd6c8);font:700 42px 'Space Grotesk';color:#08111b">SG</div>
+    <h3>Sneha Basavaraj Goudar</h3><p>Final-year Computer Engineering · Class of 2027</p>
+    <div class="mini-stats"><div class="stat"><strong>2026</strong><span>Siemens Internship</span></div><div class="stat"><strong>2027</strong><span>Graduation</span></div><div class="stat"><strong>8.03</strong><span>CGPA</span></div></div>
+  </aside>
+</div></section>
+<section id="about"><div class="container"><div class="section-head"><span class="label">A little about me</span><h2>Curious mind. <span class="accent">Practical mindset.</span></h2><p>I like exploring how software can make everyday work easier, more organized, and more reliable.</p></div>
+<div class="about-grid"><article class="card"><h3><i class="fa-regular fa-compass accent"></i> My approach</h3><p>I learn by working through real tasks, understanding the problem, trying solutions, and improving them with feedback. I value teamwork, clear communication, and building tools that are useful to their users.</p></article><article class="card"><h3><i class="fa-solid fa-laptop-code accent"></i> What I'm exploring</h3><p>Application development, databases, cloud-connected systems, AI-assisted student tools, and creating simple interfaces for complex workflows.</p></article></div></div></section>
+<section id="skills"><div class="container"><div class="section-head"><span class="label">Skills & tools</span><h2>Technologies I'm <span class="accent">learning and using.</span></h2><p>This list is an initial draft based on projects and details already shared. We can adjust it to match your exact confidence and experience.</p></div>
+<div class="pills"><span class="pill">C</span><span class="pill">C++</span><span class="pill">Java</span><span class="pill">HTML</span><span class="pill">CSS</span><span class="pill">JavaScript</span><span class="pill">Flutter</span><span class="pill">Dart</span><span class="pill">Firebase Authentication</span><span class="pill">Cloud Firestore</span><span class="pill">MySQL</span><span class="pill">Git & GitHub</span><span class="pill">Postman</span><span class="pill">Figma</span><span class="pill">Canva</span><span class="pill">Google Sites</span><span class="pill">Microsoft Excel</span></div></div></section>
+<section id="projects"><div class="container"><div class="section-head"><span class="label">Selected work</span><h2>Projects built to <span class="accent">solve problems.</span></h2><p>These project summaries are based on the work and ideas you've discussed. Add screenshots, repositories, and demo links when ready.</p></div>
+<div class="project-grid">
+<article class="card project"><div class="project-icon"><i class="fa-solid fa-industry"></i></div><h3>Feeder Maintenance Management System</h3><p>A Windows desktop application developed during an industrial internship to help maintenance teams track SMT feeders, monitor calibration schedules, record repairs, and review maintenance history. Includes role-based access, dashboard status counts, RFID EPC identification, and notifications.</p><div class="tags"><span class="tag">Flutter & Dart</span><span class="tag">Firebase</span><span class="tag">Cloud Firestore</span><span class="tag">Zebra RFID</span><span class="tag">Windows App</span></div></article>
+<article class="card project"><div class="project-icon"><i class="fa-solid fa-brain"></i></div><h3>AURA — Intelligent Digital Twin for Student Assistance</h3><p>An academic project concept focused on personalized student support. The proposed system brings study resources and student context together to help with learning, planning, and finding relevant information, with ideas such as document retrieval, OCR, memory, and an AI avatar.</p><div class="tags"><span class="tag">AI Concept</span><span class="tag">RAG Research</span><span class="tag">Student Productivity</span><span class="tag">Team Project</span></div></article>
+<article class="card project"><div class="project-icon"><i class="fa-solid fa-code"></i></div><h3>Personal Portfolio Website</h3><p>A responsive personal website to present my background, skills, projects, internship experience, and contact links in one place. Built with HTML, CSS, and JavaScript and designed for GitHub Pages hosting.</p><div class="tags"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span><span class="tag">GitHub Pages</span></div></article>
+<article class="card project"><div class="project-icon"><i class="fa-solid fa-shield-halved"></i></div><h3>Women Safety Device — Mini Project</h3><p>A mini project designed to support women during emergency situations by sending alert messages with location details to selected emergency contacts. This project introduced me to embedded systems and real-time problem solving.</p><div class="tags"><span class="tag">Embedded Systems</span><span class="tag">Emergency Alerts</span><span class="tag">Safety Technology</span></div></article>
+</div></div></section>
+<section id="experience"><div class="container"><div class="section-head"><span class="label">Experience & learning</span><h2>Learning beyond <span class="accent">the classroom.</span></h2></div><div class="timeline">
+<article class="card"><div class="meta">August – September 2026 · Siemens Limited, Goa</div><h3>Siemens Limited — Industrial Intern</h3><p>Completed an industrial internship at Siemens Limited, Goa, developing a Feeder Maintenance Management System for SMT production lines. The work involved understanding shop-floor maintenance needs, organizing feeder data, developing application screens, connecting Firebase services, and testing RFID-based feeder identification with a Zebra RFD40 and TC21 setup.</p></article>
+<article class="card"><div class="meta">Certifications & Activities</div><h3>Technical Learning</h3><p>AI-ML Virtual Internship — AICTE–EduSkills (Google Supported), Jan–Mar 2025; Android Developer Virtual Internship — AICTE–EduSkills (Google Supported), Jul–Sep 2025; Postman Student Expert; Web Designing Competition (Figma) participant, September 2025.</p></article>
+</div></div></section>
+
+<section id="education"><div class="container"><div class="section-head"><span class="label">Education</span><h2>Building my <span class="accent">foundation.</span></h2></div><div class="timeline">
+<article class="card"><div class="meta">2023–2027 · Expected graduation</div><h3>Bachelor of Engineering — Computer Engineering</h3><p>Shree Rayeshwar Institute of Engineering & Information Technology, Shiroda, Goa · Goa University · CGPA: 8.03</p></article>
+<article class="card"><div class="meta">2022 · Higher Secondary</div><h3>H.S.S.C. — Science</h3><p>MES Vasant Joshi College of Arts and Commerce, Zuarinagar, Goa</p></article>
+<article class="card"><div class="meta">2019 · Secondary School</div><h3>S.S.C.</h3><p>Vidya Mandir, Chicalim, Goa</p></article>
+</div></div></section>
+<section id="certificates"><div class="container"><div class="section-head"><span class="label">Certificates & Activities</span><h2>Learning beyond the classroom.</h2></div><div class="grid">
+<article class="card"><div class="project-icon"><i class="fa-solid fa-robot"></i></div><h3>AI-ML Virtual Internship</h3><p>AICTE–EduSkills, Google Supported · Jan–Mar 2025</p></article>
+<article class="card"><div class="project-icon"><i class="fa-brands fa-android"></i></div><h3>Android Developer Virtual Internship</h3><p>AICTE–EduSkills, Google Supported · Jul–Sep 2025</p></article>
+<article class="card"><div class="project-icon"><i class="fa-solid fa-paper-plane"></i></div><h3>Postman Student Expert</h3><p>Technical learning achievement. Add the certificate scan or verification link when available.</p></article>
+<article class="card"><div class="project-icon"><i class="fa-solid fa-pen-ruler"></i></div><h3>Web Designing Competition</h3><p>Figma · Participant · September 2025</p></article>
+</div><p class="form-note">Certificate names are listed from your resume; certificate images were not provided.</p></div></section>
+<section id="contact"><div class="container"><div class="card contact"><span class="label">Get in touch</span><h2>Let's connect and <span class="accent">keep learning.</span></h2><p>I'm open to connecting about entry-level opportunities, internships, projects, and learning from people in technology.</p><div class="buttons" style="justify-content:center"><a class="btn primary" id="emailButton" href="mailto:goudarsneha887@gmail.com"><i class="fa-solid fa-envelope"></i> Email Me</a><a class="btn secondary" id="githubButton" href="https://github.com/snehagoudar887" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> GitHub</a><a class="btn secondary" id="linkedinButton" href="https://www.linkedin.com/in/sneha-goudar-687536314/" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin"></i> LinkedIn</a><a class="btn secondary" href="assets/Sneha_Basavaraj_Goudar_Resume.docx" download><i class="fa-solid fa-download"></i> Download Resume</a></div><div class="socials"><a class="social" id="githubIcon" href="https://github.com/snehagoudar887" aria-label="GitHub"><i class="fa-brands fa-github"></i></a><a class="social" id="linkedinIcon" href="https://www.linkedin.com/in/sneha-goudar-687536314/" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a><a class="social" href="mailto:goudarsneha887@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a></div></div></div>
+<div class="card" style="margin-top:24px"><h3>Send me a message</h3>
+<p>Recruiters can prepare a message using this form. It opens their email application addressed to me.</p>
+<form id="contactForm" style="display:grid;gap:12px">
+<label>Your name<input id="senderName" required placeholder="Your name / company"></label>
+<label>Your work email<input id="senderEmail" type="email" required placeholder="you@company.com"></label>
+<label>Subject<input id="subject" required placeholder="Interview / job opportunity"></label>
+<label>Message<textarea id="message" required placeholder="Write your message"></textarea></label>
+<button class="btn primary" type="submit">Prepare email <i class="fa-regular fa-paper-plane"></i></button>
+<p class="form-note">This static site does not store or send messages automatically. The visitor must press Send in their email app.</p><p id="formStatus" class="form-note" role="status"></p>
+</form></div>
+</section>
+</main>
+<footer>Designed and built by <span>Sneha Goudar</span> · 2026</footer>
+<script>
+const menuBtn=document.getElementById('menuBtn'), navLinks=document.getElementById('navLinks');
+menuBtn.addEventListener('click',()=>navLinks.classList.toggle('open'));
+document.querySelectorAll('.nav-links a').forEach(a=>a.addEventListener('click',()=>navLinks.classList.remove('open')));
+const observer=new IntersectionObserver(entries=>entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add('reveal');observer.unobserve(entry.target)}}),{threshold:.1});
+document.querySelectorAll('.card,.section-head,.pills').forEach(el=>observer.observe(el));
+</script>
+</body></html>
+<script>
+const contactForm=document.getElementById('contactForm');
+if(contactForm){contactForm.addEventListener('submit',function(e){e.preventDefault();
+const n=document.getElementById('senderName').value.trim(), em=document.getElementById('senderEmail').value.trim(),
+s=document.getElementById('subject').value.trim(), m=document.getElementById('message').value.trim();
+document.getElementById('formStatus').textContent='Opening your email app. Please review the message and press Send.';
+location.href='mailto:goudarsneha887@gmail.com?subject='+encodeURIComponent(s)+'&body='+encodeURIComponent('Name: '+n+'\\nReply email: '+em+'\\n\\n'+m);
+});}
+</script>
